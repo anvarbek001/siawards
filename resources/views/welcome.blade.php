@@ -18,8 +18,9 @@
 
         <nav>
             <div class="w">
-                <a class="logo" href="#top"><img src="{{ asset('images/logo_science_innovation.png') }}"
-                        alt="Science and Innovation"></a>
+                <a class="logo" href="#top">
+                    {{-- <img src="{{ asset('images/logo_science_innovation.png') }}" alt="Science and Innovation"> --}}
+                </a>
                 <div class="links"><a href="#marosim">Tadbir haqida</a><a href="#awards">Nominatsiyalar</a><a
                         href="#korgazma">Ko'rgazmalar</a><a href="#gala_konsert">Gala konsert</a><a
                         href="#mezonlar">Mezonlar</a><a href="#tashkilotchi">Tashkilotchi</a></div>
@@ -107,7 +108,7 @@
             <section id="awards" style="padding-top:40px">
                 <div class="w">
                     <div class="head rv">
-                        <h2>Sovrin uchun kurashadigan <span class="gold">oltita nominatsiya</span></h2>
+                        <h2><span class="gold">Nominatsiyalar</span></h2>
                         <p class="sub">Har bir yo'nalish g'olibi tantanali marosimda e'lon qilinadi va taqdirlanadi.
                         </p>
                     </div>
@@ -159,7 +160,7 @@
                                     <path d="M6 3h9l4 4v14H6z" />
                                     <path d="M14 3v5h5M9 13h7M9 17h5" />
                                 </svg></div>
-                            <h3>Yilning eng yaxshi ilmiy nashri*</h3>
+                            <h3>Yilning eng yaxshi nashri*</h3>
                             <p>Ilmiy hamjamiyatga eng katta hissa qo'shgan nashr.</p>
                         </article>
                     </div>
@@ -169,7 +170,7 @@
             <section id="korgazma" style="padding-top:40px">
                 <div class="w">
                     <div class="head rv">
-                        <h2>Ko'rgazma <span class="gold">2025</span></h2>
+                        <h2><span class="gold">Ko'rgazma</span></h2>
                         <p class="sub">O'tgan yilgi ilmiy-innovatsion ko'rgazmadan lavhalar.</p>
                     </div>
                     <div class="gal k">
@@ -188,8 +189,8 @@
             <section id="gala_konsert" style="padding-top:40px">
                 <div class="w">
                     <div class="head rv">
-                        <h2>Gala konsert <span class="gold">2025</span></h2>
-                        <p class="sub">Taqdirlash marosimidan so'ng bo'lib o'tgan tantanali konsert lavhalari.</p>
+                        <h2><span class="gold">Gala konsert</span></h2>
+                        <p class="sub">Taqdirlash marosimida bo'lib o'tgan tantanali konsert lavhalari.</p>
                     </div>
                     <div class="gal c">
                         @for ($i = 1; $i <= 7; $i++)
@@ -337,7 +338,9 @@
             <section id="join" style="padding-top:20px">
                 <div class="w">
                     <div class="final rv">
-                        <h2>Ilmiy yutuqlaringizni <span class="gold">e'tirof ettiring</span></h2>
+                        <h2>Ilmiy yutuqlar <span class="gold">e'tirofi</span></h2>
+                        <h3 class="gold" style="margin-bottom: 2px;">Yilning eng katta ilm-fan bayramida ishtirok
+                            etishga shoshiling</h3>
                         <p>Ro'yxatdan o'tish sahifasi tez orada e'lon qilinadi. Hozircha savollar bo'yicha Telegram
                             orqali murojaat qiling.</p>
                         <a class="btn" href="https://t.me/science_innovations" target="_blank"
@@ -352,8 +355,14 @@
 
         <footer>
             <div class="w">
-                <img class="flogo" src="{{ asset('images/logo_science_innovation.png') }}"
-                    alt="Science and Innovation">
+                <div style="display: flex; align-items: center;">
+                    <img class="flogo" src="{{ asset('images/logo_science_innovation.png') }}"
+                        alt="Science and Innovation">
+                    <div>
+                        <h3 class="gold" style="letter-spacing: 1px;">SCIENCE &</h3>
+                        <h5>INNOVATION AWARDS</h5>
+                    </div>
+                </div>
                 <div class="fcts"><a href="https://t.me/science_Gulirano" target="_blank" rel="noopener">+998 (90)
                         125-96-54</a><a href="https://t.me/Science_Feruza" target="_blank" rel="noopener">+998 (93)
                         354-96-54</a></div>
