@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Http\Controllers\Auth;
+
+use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginRequest;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+class AuthController extends Controller
+{
+    public function admin()
+    {
+        return view('admin.auth.login');
+    }
+
+    public function login(LoginRequest $request)
+    {
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials, $request->boolean('remember'))) {
+            $request->session()->regenerate();
+
+            return redirect()->intended(route('admin.index'));
+        };
+
+        return back()
+            ->withErrors(['email' => 'Email yoki parol noto\'g\'ri.'])
+            ->onlyInput('email');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect()->route('admin');
+    }
+
+    public function index()
+    {
+        return view('admin.index');
+    }
+}
