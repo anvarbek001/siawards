@@ -95,9 +95,9 @@
                         </div>
                         <div class="sacts">
                             <a class="btn" href="#ishtirok">Ishtirok etish &rarr;</a>
-                            <a class="btn ghost"
+                            {{-- <a class="btn ghost"
                                 href="https://awards.science-innovation.org/files/SCIENCE%20AND%20INNOVATION%20AWARDS.pdf"
-                                target="_blank" rel="noopener">Tadbir haqida</a>
+                                target="_blank" rel="noopener">Tadbir haqida</a> --}}
                         </div>
                     </div>
                 </aside>
@@ -283,22 +283,19 @@
                         <p class="sub">PDF hujjatlar bilan oldindan tanishib chiqing.</p>
                     </div>
                     <div class="docs">
-                        <a class="doc rv"
-                            href="https://awards.science-innovation.org/files/Baholash%20mezoni%20OTM.pdf"
-                            target="_blank" rel="noopener"><i>PDF</i><span>OTM uchun baholash mezonlari<small>100
+                        <a class="doc rv" href="{{ asset('pdfs/OTM.pdf') }}" target="_blank"
+                            rel="noopener"><i>PDF</i><span>OTM uchun baholash mezonlari<small>100
                                     ball</small></span></a>
-                        <a class="doc rv"
-                            href="https://awards.science-innovation.org/files/Baholash%20%20mezonlari%20Yil%20olimi.pdf"
-                            target="_blank" rel="noopener"><i>PDF</i><span>“Yil olimi” nominatsiyasi<small>Baholash
+                        <a class="doc rv" href="{{ asset('pdfs/yil_olimi.pdf') }}" target="_blank"
+                            rel="noopener"><i>PDF</i><span>“Yil olimi” nominatsiyasi<small>Baholash
                                     mezonlari</small></span></a>
-                        <a class="doc rv"
-                            href="https://awards.science-innovation.org/files/Baholash%20mezoni%20ITI.pdf"
-                            target="_blank" rel="noopener"><i>PDF</i><span>Ilmiy-tadqiqot institutlari
+                        <a class="doc rv" href="{{ asset('pdfs/ITI.pdf') }}" target="_blank"
+                            rel="noopener"><i>PDF</i><span>Ilmiy-tadqiqot institutlari
                                 (ITI)<small>Baholash mezonlari</small></span></a>
-                        <a class="doc rv"
+                        {{-- <a class="doc rv"
                             href="https://awards.science-innovation.org/files/SCIENCE%20AND%20INNOVATION%20AWARDS.pdf"
                             target="_blank" rel="noopener"><i>PDF</i><span>Tadbir haqida<small>Science and Innovation
-                                    Awards</small></span></a>
+                                    Awards</small></span></a> --}}
                     </div>
                 </div>
             </section>
