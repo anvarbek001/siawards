@@ -366,11 +366,13 @@
                 <div class="fcts"><a href="https://t.me/science_Gulirano" target="_blank" rel="noopener">+998 (90)
                         125-96-54</a><a href="https://t.me/Science_Feruza" target="_blank" rel="noopener">+998 (93)
                         354-96-54</a></div>
+                <a href="#" data-cookie-settings>Cookie sozlamalari</a>
                 <span>&copy; <span id="yr"></span> Science and Innovation</span>
             </div>
         </footer>
 
         <div class="lb" id="lb" aria-hidden="true"><img alt=""></div>
+        <x-cookie-consent policy-url="/maxfiylik-siyosati" />
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
         <script>
